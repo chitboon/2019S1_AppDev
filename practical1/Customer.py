@@ -16,7 +16,7 @@ class Customer:
 
     def set_customer_id(self, customer_id):
         if len(customer_id) == 5:
-                if customer_id[-1].isalpha():
+                if customer_id[-1].isalpha() and customer_id[0:3].isdigit():
                     self.__customer_id = customer_id
 
     def display_details(self):
