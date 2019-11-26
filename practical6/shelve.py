@@ -48,6 +48,7 @@ def delete_student():
         print("Student's Record deleted")
     else:
         print("ERROR: id does not exist")
+    student_db.close()
 
 while True:
     print('==== Student Records ====')
